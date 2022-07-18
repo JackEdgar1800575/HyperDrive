@@ -120,13 +120,19 @@ void AHyperDrivePawn::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, 
 			{
 				if (Resupply->Type == EResupplyType::HEALTH)
 				{
-					CurrentHealth += Resupply->PickupValue;
+					if (!Resupply->bIsFull)
+						CurrentHealth += Resupply->PickupValue;
+					else
+						CurrentHealth = MaxHealth;
 					Resupply->Destroy();
 				}
 
 				if (Resupply->Type == EResupplyType::ARMOUR)
 				{
-					CurrentArmour += Resupply->PickupValue;
+					if (!Resupply->bIsFull)
+						CurrentArmour += Resupply->PickupValue;
+					else
+						CurrentArmour = MaxArmour;
 					Resupply->Destroy();
 				}
 			}

@@ -6,7 +6,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "ProjectileActor.h"
 
-
 // Sets default values
 AWeaponActor::AWeaponActor()
 {

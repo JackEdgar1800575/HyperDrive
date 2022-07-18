@@ -10,9 +10,9 @@ class AHyperDrivePawn : public APawn
 {
 	GENERATED_BODY()
 
-		/* The mesh component */
-		UPROPERTY(Category = Mesh, VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-		class UStaticMeshComponent* ShipMeshComponent;
+	/* The mesh component */
+	UPROPERTY(Category = Mesh, VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	class UStaticMeshComponent* ShipMeshComponent;
 
 	/** The camera */
 	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
