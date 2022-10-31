@@ -31,7 +31,7 @@ public:
 
 	//Weapon Components
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Components")
-		TSubclassOf<class AProjectileActor> WeaponProjectile;
+		TSubclassOf<class AProjectileActor> ProjectileType;
 
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Components")
 	//	class UAkAudioEvent* WeaponFireEvent;

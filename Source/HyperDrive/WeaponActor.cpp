@@ -48,13 +48,16 @@ void AWeaponActor::Fire(FVector SpawnPosition, FRotator Rotation)
 		UWorld* const World = GetWorld();
 		if (World != NULL)
 		{
-			if (WeaponProjectile)
+			FTransform SpawnTM(Rotation, SpawnPosition);
+			AProjectileActor* Launched = Cast<AProjectileActor>(UGameplayStatics::BeginDeferredActorSpawnFromClass(this, ProjectileType, SpawnTM));
+			if (Launched)
 			{
 				// spawn the projectile
-				AProjectileActor* Launched = World->SpawnActor<AProjectileActor>(WeaponProjectile, SpawnPosition, Rotation);
 				Launched->DamageAmount = DamageAmount;
 				Launched->ProjectileStrength = ProjectileStrength;
 				Launched->Range = WeaponRange;
+
+				UGameplayStatics::FinishSpawningActor(Launched, SpawnTM);
 			}
 		}
 
