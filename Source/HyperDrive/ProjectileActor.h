@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "ProjectileActor.generated.h"
 
+class UProjectileEffectComponent;
 UCLASS(Blueprintable)
 class HYPERDRIVE_API AProjectileActor : public AActor
 {
@@ -17,6 +18,9 @@ class HYPERDRIVE_API AProjectileActor : public AActor
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		UProjectileEffectComponent* ProjectileSpecialComponent;
 	
 public:	
 	// Sets default values for this actor's properties
@@ -50,6 +54,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Stats")
 		float Range;
 
+	//Projectile Components
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
+		TSubclassOf<UProjectileEffectComponent> ProjectileComponentType;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Condition")
 		int CurrentStrength;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Condition")

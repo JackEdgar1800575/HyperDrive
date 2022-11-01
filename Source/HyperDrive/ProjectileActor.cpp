@@ -4,6 +4,8 @@
 #include "ProjectileActor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "RicochetEffect.h"
+#include "ProjectileEffectComponent.h"
 
 
 // Sets default values
@@ -25,12 +27,16 @@ AProjectileActor::AProjectileActor()
 	ProjectileMovement->InitialSpeed = 3000.f;
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
-	ProjectileMovement->bShouldBounce = false;
+	ProjectileMovement->bShouldBounce = true;
+	ProjectileMovement->Bounciness = 0.0f;
 	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity
 
 	ProjectileStrength = -1;
 	CurrentStrength = ProjectileStrength;
 	DamageAmount = 500;
+	ProjectileSpeed = 3000.0f;
+
+	ProjectileSpecialComponent = CreateDefaultSubobject<UProjectileEffectComponent>(TEXT("ProjectileSpecial0"));
 
 }
 
@@ -40,6 +46,15 @@ void AProjectileActor::BeginPlay()
 	Super::BeginPlay();
 
 	Origin = GetActorLocation();
+
+	ProjectileMovement->InitialSpeed = ProjectileSpeed;
+	ProjectileMovement->MaxSpeed = ProjectileSpeed;
+
+	if (ProjectileComponentType != nullptr)
+	{
+		ProjectileSpecialComponent = NewObject<UProjectileEffectComponent>(this, *ProjectileComponentType);
+		ProjectileSpecialComponent->SetProjectile(this);
+	}
 	
 }
 
@@ -63,9 +78,17 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
 
-	//Projectile auto destroys is strength is set to -1
-	if (ProjectileStrength == -1)
-		OnProjectileDestroy();
+	if (ProjectileComponentType != nullptr)
+	{
+		ProjectileSpecialComponent->ActivateHitEffect();
+
+	}
+	else
+	{
+		//Projectile auto destroys if strength is set to -1
+		if (ProjectileStrength == -1)
+			OnProjectileDestroy();
+	}
 }
 
 void AProjectileActor::OnProjectileDestroy()
