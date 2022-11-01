@@ -3,6 +3,8 @@
 
 #include "PickupActor.h"
 #include "HyperDrivePawn.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
 
 // Sets default values
 APickupActor::APickupActor()
@@ -42,5 +44,10 @@ void APickupActor::PlayPickupSound()
 	{
 		FAkAudioDevice::Get()->PostEvent(PickupEvent,this);
 	}*/
+
+	if (PickupSound != nullptr)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, PickupSound, GetActorLocation());
+	}
 }
 

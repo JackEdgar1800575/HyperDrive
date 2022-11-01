@@ -5,6 +5,8 @@
 #include "Engine/CollisionProfile.h"
 #include "Engine/StaticMesh.h"
 #include "Components/InputComponent.h"
+#include "Sound/SoundBase.h"
+#include "Kismet/GameplayStatics.h"
 #include "ProjectileActor.h"
 
 
@@ -42,6 +44,11 @@ void AEnemyPawn::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimit
 	if (OtherActor)
 	{
 		AProjectileActor* Proj = Cast<AProjectileActor>(OtherActor);
+
+		if (HitSound != nullptr)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
+		}
 
 		if (Proj)
 		{
@@ -102,6 +109,11 @@ void AEnemyPawn::OnDestroyEnemy()
 	//{
 	//	FAkAudioDevice::Get()->PostEvent(DeathSoundEvent, this);
 	//}
+
+	if (DeathSound != nullptr)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, DeathSound, GetActorLocation());
+	}
 	Destroy();
 }
 

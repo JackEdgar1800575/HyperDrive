@@ -33,6 +33,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Components")
 		TSubclassOf<class AProjectileActor> ProjectileType;
 
+	//Sound Cues to play when beginning or ending inetraction with player
+	UPROPERTY(Category = "Weapon Components", EditAnywhere, BlueprintReadWrite)
+		class USoundBase* FireSound;
+
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon Components")
 	//	class UAkAudioEvent* WeaponFireEvent;
 

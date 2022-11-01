@@ -64,6 +64,11 @@ void AWeaponActor::Fire(FVector SpawnPosition, FRotator Rotation)
 		bCanFire = false;
 		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AWeaponActor::ShotTimerExpired, FireRate);
 
+		if (FireSound != nullptr)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this,FireSound,SpawnPosition);
+		}
+
 		////Play Audio of Weapon Firing
 		//if (WeaponFireEvent != nullptr)
 		//{
