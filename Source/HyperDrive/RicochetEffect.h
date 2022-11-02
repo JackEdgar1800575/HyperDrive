@@ -8,10 +8,12 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class HYPERDRIVE_API URicochetEffect : public UProjectileEffectComponent
 {
 	GENERATED_BODY()
+public:
+	URicochetEffect();
 
 private:
 	int RicoHits = 5;
@@ -19,5 +21,11 @@ private:
 public:
 
 	virtual void ActivateHitEffect() override;
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		int MaxRicos;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		float RicoSpeedChange;
+
+
+
 };

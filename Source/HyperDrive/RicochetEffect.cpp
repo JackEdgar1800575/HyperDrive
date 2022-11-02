@@ -4,6 +4,16 @@
 #include "RicochetEffect.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
+URicochetEffect::URicochetEffect()
+{
+	PrimaryComponentTick.bCanEverTick = true;
+
+	MaxRicos = 5;
+    RicoHits = MaxRicos;
+	RicoSpeedChange = 1.0f;
+
+}
+
 void URicochetEffect::ActivateHitEffect()
 {
 	Super::ActivateHitEffect();
@@ -15,9 +25,9 @@ void URicochetEffect::ActivateHitEffect()
 			Projectile->OnProjectileDestroy();
 
 		FVector Vel = Projectile->GetProjectileMovement()->Velocity;
+		Vel *= -RicoSpeedChange;
 
-
-		Projectile->GetProjectileMovement()->Velocity = -Vel;
+		Projectile->GetProjectileMovement()->Velocity = Vel;
 	}
 }
 

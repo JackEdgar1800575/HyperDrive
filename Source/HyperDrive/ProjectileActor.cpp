@@ -36,7 +36,7 @@ AProjectileActor::AProjectileActor()
 	DamageAmount = 500;
 	ProjectileSpeed = 3000.0f;
 
-	ProjectileSpecialComponent = CreateDefaultSubobject<UProjectileEffectComponent>(TEXT("ProjectileSpecial0"));
+	//ProjectileSpecialComponent = CreateDefaultSubobject<UProjectileEffectComponent>(TEXT("ProjectileSpecial0"));
 
 }
 
@@ -50,9 +50,11 @@ void AProjectileActor::BeginPlay()
 	ProjectileMovement->InitialSpeed = ProjectileSpeed;
 	ProjectileMovement->MaxSpeed = ProjectileSpeed;
 
-	if (ProjectileComponentType != nullptr)
+	TArray<UProjectileEffectComponent*> comp;
+	GetComponents(comp);
+	if (comp.Num() > 0)
 	{
-		ProjectileSpecialComponent = NewObject<UProjectileEffectComponent>(this, *ProjectileComponentType);
+		ProjectileSpecialComponent = comp[0];
 		ProjectileSpecialComponent->SetProjectile(this);
 	}
 	
@@ -78,7 +80,7 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
 
-	if (ProjectileComponentType != nullptr)
+	if (ProjectileSpecialComponent != nullptr)
 	{
 		ProjectileSpecialComponent->ActivateHitEffect();
 
