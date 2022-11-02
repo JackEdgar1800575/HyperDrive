@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="FireSound" ID="{D2809DB0-761B-4C19-92AF-2981ACDB261F}" ShortID="465689025">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{599894D0-10B9-4ACF-A779-9C17FF2F5408}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F58BFEEA-A538-4C4F-B81B-5179411E8CEC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TwinStickFire" ID="{0D928D43-076F-49D8-800D-BA036C325CC4}">
+							<Language>SFX</Language>
+							<AudioFile>TwinStickFire.WAV</AudioFile>
+							<MediaIDList>
+								<MediaID ID="838413541"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="TwinStickFire" ID="{0D928D43-076F-49D8-800D-BA036C325CC4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,3 @@
+﻿  WwiseEffectTestFX.cpp
+D:\Program Files\Wwise\WWise Plugins\WwiseEffectTest\SoundEnginePlugin\WwiseEffectTestFX.cpp(165,14): warning C4101: 'output': unreferenced local variable
+  WwiseEffectTest_Windows_vc160_static.vcxproj -> D:\Program Files\Wwise\SDK\x64_vc160\Profile\lib\WwiseEffectTestFX.lib

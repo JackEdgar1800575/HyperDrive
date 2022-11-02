@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Game Projects\Unreal Engine 4 Project\HyperDrive\Content\WwiseAudio\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="2880737896" GUID="{5C073A5F-3679-4258-BC89-EB5BFD836903}" Language="SFX" Hash="96887590">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
+			<ShortName>MainBank</ShortName>
+			<Path>MainBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1283499417" Name="FireWeapon" ObjectPath="\Events\Default Work Unit\FireWeapon" GUID="{941609AD-8E91-4962-889D-21A569BB9B5C}" DurationType="OneShot" DurationMin="0.181995" DurationMax="0.181995">
+					<IncludedMemoryFiles>
+						<File Id="838413541" Language="SFX">
+							<ShortName>TwinStickFire.WAV</ShortName>
+							<Path>SFX\TwinStickFire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

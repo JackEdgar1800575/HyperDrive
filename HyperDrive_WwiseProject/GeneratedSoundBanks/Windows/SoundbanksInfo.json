@@ -1,0 +1,57 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "E:\\Game Projects\\Unreal Engine 4 Project\\HyperDrive\\HyperDrive_WwiseProject\\",
+   "SourceFilesRoot": "E:\\Game Projects\\Unreal Engine 4 Project\\HyperDrive\\HyperDrive_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "E:\\Game Projects\\Unreal Engine 4 Project\\HyperDrive\\HyperDrive_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "E:\\Game Projects\\Unreal Engine 4 Project\\HyperDrive\\HyperDrive_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "3690994985",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "2880737896",
+    "GUID": "{5C073A5F-3679-4258-BC89-EB5BFD836903}",
+    "Language": "SFX",
+    "Hash": "96887590",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
+    "ShortName": "MainBank",
+    "Path": "MainBank.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1283499417",
+      "Name": "FireWeapon",
+      "ObjectPath": "\\Events\\Default Work Unit\\FireWeapon",
+      "GUID": "{941609AD-8E91-4962-889D-21A569BB9B5C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.181995",
+      "DurationMax": "0.181995",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "838413541",
+        "Language": "SFX",
+        "ShortName": "TwinStickFire.WAV",
+        "Path": "SFX\\TwinStickFire_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="FireWeapon" ID="{941609AD-8E91-4962-889D-21A569BB9B5C}">
+					<ChildrenList>
+						<Action Name="" ID="{663BBD75-F434-44B7-A0E4-E3CD9640E0DE}" ShortID="849246769">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FireSound" ID="{D2809DB0-761B-4C19-92AF-2981ACDB261F}" WorkUnitID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
