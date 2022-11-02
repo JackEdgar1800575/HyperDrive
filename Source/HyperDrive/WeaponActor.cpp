@@ -2,7 +2,8 @@
 
 
 #include "WeaponActor.h"
-#include "Sound/SoundBase.h"
+//#include "Sound/SoundBase.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "Kismet/GameplayStatics.h"
 #include "ProjectileActor.h"
 
@@ -64,16 +65,12 @@ void AWeaponActor::Fire(FVector SpawnPosition, FRotator Rotation)
 		bCanFire = false;
 		World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &AWeaponActor::ShotTimerExpired, FireRate);
 
-		if (FireSound != nullptr)
+		//Play Audio of Weapon Firing
+		if (WeaponFireEvent != nullptr)
 		{
-			UGameplayStatics::PlaySoundAtLocation(this,FireSound,SpawnPosition);
-		}
+			PlayingID = FAkAudioDevice::Get()->PostEvent(WeaponFireEvent, this);
 
-		////Play Audio of Weapon Firing
-		//if (WeaponFireEvent != nullptr)
-		//{
-		//	FAkAudioDevice::Get()->PostEvent(WeaponFireEvent, this);
-		//}
+		}
 
 		bCanFire = false;
 		if (!bIsInfiniteAmmo)

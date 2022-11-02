@@ -16,10 +16,12 @@ class HYPERDRIVE_API APickupActor : public AActor
 	UPROPERTY(Category = Mesh, EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	class UStaticMeshComponent* PickupMeshComponent;
 
+	//UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	//	class USoundBase* PickupSound;
 	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-		class USoundBase* PickupSound;
-	//UPROPERTY(Category = "WWise", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	//	class UAkAudioEvent* PickupEvent;
+		class UAkAudioEvent* PickupEvent;
+
+	int32 PickupPlayID;
 	
 public:	
 	// Sets default values for this actor's properties

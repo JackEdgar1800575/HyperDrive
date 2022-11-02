@@ -26,6 +26,75 @@
 						<ActiveSource Name="TwinStickFire" ID="{0D928D43-076F-49D8-800D-BA036C325CC4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="PickupJingle" ID="{7A2FE231-C85B-488B-8B1D-091474ACA4B4}" ShortID="546880377">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{599894D0-10B9-4ACF-A779-9C17FF2F5408}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F58BFEEA-A538-4C4F-B81B-5179411E8CEC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PickupJingle" ID="{88252732-D5AA-46CE-9D4A-F38170AF389E}">
+							<Language>SFX</Language>
+							<AudioFile>PickupJingle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="207695274"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="PickupJingle" ID="{88252732-D5AA-46CE-9D4A-F38170AF389E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HitSound" ID="{64EAEEC6-64D0-4378-AAAE-E0AF1CB4FCA8}" ShortID="194969517">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{599894D0-10B9-4ACF-A779-9C17FF2F5408}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F58BFEEA-A538-4C4F-B81B-5179411E8CEC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HitSound" ID="{E1B26D0E-1912-4F97-890F-0CD737ED4BB1}">
+							<Language>SFX</Language>
+							<AudioFile>HitSound.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="533110864"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="HitSound" ID="{E1B26D0E-1912-4F97-890F-0CD737ED4BB1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Explosion" ID="{72E44AE7-925F-4C47-BB60-0B9A08EBBF3D}" ShortID="1032908344">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{599894D0-10B9-4ACF-A779-9C17FF2F5408}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F58BFEEA-A538-4C4F-B81B-5179411E8CEC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Explosion" ID="{664A4F92-35BD-4C61-A202-B3391F141198}">
+							<Language>SFX</Language>
+							<AudioFile>Explosion.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="433453097"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Explosion" ID="{664A4F92-35BD-4C61-A202-B3391F141198}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

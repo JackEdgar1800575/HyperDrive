@@ -6,6 +6,9 @@
 				<SoundBank Name="MainBank" ID="{5C073A5F-3679-4258-BC89-EB5BFD836903}">
 					<ObjectInclusionList>
 						<ObjectRef Name="FireWeapon" ID="{941609AD-8E91-4962-889D-21A569BB9B5C}" WorkUnitID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="HitSound" ID="{9F7ABB11-2C61-49CE-B81D-52F78CE6ABC0}" WorkUnitID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayPickupJingle" ID="{2619185D-4F56-4BD0-AA2F-1BF8589826A1}" WorkUnitID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Explosion" ID="{4F87FF2B-D1B6-4D7B-B70B-EA3A52693C02}" WorkUnitID="{3A3C041B-3BB1-4D65-A749-384920C023A9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

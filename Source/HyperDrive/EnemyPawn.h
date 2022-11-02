@@ -58,13 +58,17 @@ public:
 	UPROPERTY(Category = "Enemy | Current State", VisibleAnywhere, BlueprintReadWrite)
 		int CurrentArmour;
 
-	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
+	/*UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
 		class USoundBase* HitSound;
 	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
-		USoundBase* DeathSound;
+		USoundBase* DeathSound;*/
 
-	/*UPROPERTY(Category = "WWise", VisibleAnywhere, BlueprintReadWrite)
-	class UAkAudioEvent* DeathSoundEvent;*/
+	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
+	class UAkAudioEvent* DeathSoundEvent;
+
+	UPROPERTY(Category = "Audio", EditAnywhere, BlueprintReadWrite)
+		UAkAudioEvent* HitSoundEvent;
+
 
 
 };

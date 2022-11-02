@@ -7,6 +7,7 @@
 #include "Components/InputComponent.h"
 #include "Sound/SoundBase.h"
 #include "Kismet/GameplayStatics.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ProjectileActor.h"
 
 
@@ -45,10 +46,15 @@ void AEnemyPawn::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimit
 	{
 		AProjectileActor* Proj = Cast<AProjectileActor>(OtherActor);
 
-		if (HitSound != nullptr)
+		if (HitSoundEvent != nullptr)
+		{
+			FAkAudioDevice::Get()->PostEvent(HitSoundEvent, this);
+		}
+
+		/*if (HitSound != nullptr)
 		{
 			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
-		}
+		}*/
 
 		if (Proj)
 		{
@@ -105,15 +111,15 @@ void AEnemyPawn::OnDestroyEnemy()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("Enemy Destroyed"));
 	////Play Audio of Weapon Firing
-	//if (DeathSoundEvent != nullptr)
-	//{
-	//	FAkAudioDevice::Get()->PostEvent(DeathSoundEvent, this);
-	//}
+	if (DeathSoundEvent != nullptr)
+	{
+		FAkAudioDevice::Get()->PostEvent(DeathSoundEvent, this);
+	}
 
-	if (DeathSound != nullptr)
+	/*if (DeathSound != nullptr)
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, DeathSound, GetActorLocation());
-	}
+	}*/
 	Destroy();
 }
 

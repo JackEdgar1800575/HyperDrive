@@ -1,6 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	13776098	Explosion			\Default Work Unit\Explosion	
+	155697680	PlayPickupJingle			\Default Work Unit\PlayPickupJingle	
 	1283499417	FireWeapon			\Default Work Unit\FireWeapon	
+	2475295733	HitSound			\Default Work Unit\HitSound	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	207695274	PickupJingle	E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\.cache\Windows\SFX\PickupJingle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PickupJingle		65600
+	433453097	Explosion	E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\.cache\Windows\SFX\Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion		422264
+	533110864	HitSound	E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\.cache\Windows\SFX\HitSound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\HitSound		98368
 	838413541	FireSound	E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\.cache\Windows\SFX\TwinStickFire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FireSound		32168
 

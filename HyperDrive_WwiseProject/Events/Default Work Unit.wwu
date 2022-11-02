@@ -14,6 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="HitSound" ID="{9F7ABB11-2C61-49CE-B81D-52F78CE6ABC0}">
+					<ChildrenList>
+						<Action Name="" ID="{F0960B2A-AE8D-49C4-98C8-5C4C8FB4A5D5}" ShortID="114893744">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HitSound" ID="{64EAEEC6-64D0-4378-AAAE-E0AF1CB4FCA8}" WorkUnitID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayPickupJingle" ID="{2619185D-4F56-4BD0-AA2F-1BF8589826A1}">
+					<ChildrenList>
+						<Action Name="" ID="{79F0BBB7-A51B-4BC5-AD3C-C18B6D883B7B}" ShortID="604741012">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupJingle" ID="{7A2FE231-C85B-488B-8B1D-091474ACA4B4}" WorkUnitID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Explosion" ID="{4F87FF2B-D1B6-4D7B-B70B-EA3A52693C02}">
+					<ChildrenList>
+						<Action Name="" ID="{81B3ADFD-68EB-4896-B9E7-E16A4C253573}" ShortID="703595738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion" ID="{72E44AE7-925F-4C47-BB60-0B9A08EBBF3D}" WorkUnitID="{9A71D7C4-261B-4223-AB9F-94D4AC42797F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

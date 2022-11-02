@@ -16,16 +16,40 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2880737896" GUID="{5C073A5F-3679-4258-BC89-EB5BFD836903}" Language="SFX" Hash="96887590">
+		<SoundBank Id="2880737896" GUID="{5C073A5F-3679-4258-BC89-EB5BFD836903}" Language="SFX" Hash="2342656142">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="13776098" Name="Explosion" ObjectPath="\Events\Default Work Unit\Explosion" GUID="{4F87FF2B-D1B6-4D7B-B70B-EA3A52693C02}" DurationType="OneShot" DurationMin="2.393424" DurationMax="2.393424">
+					<IncludedMemoryFiles>
+						<File Id="433453097" Language="SFX">
+							<ShortName>Explosion.wav</ShortName>
+							<Path>SFX\Explosion_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1283499417" Name="FireWeapon" ObjectPath="\Events\Default Work Unit\FireWeapon" GUID="{941609AD-8E91-4962-889D-21A569BB9B5C}" DurationType="OneShot" DurationMin="0.181995" DurationMax="0.181995">
 					<IncludedMemoryFiles>
 						<File Id="838413541" Language="SFX">
 							<ShortName>TwinStickFire.WAV</ShortName>
 							<Path>SFX\TwinStickFire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2475295733" Name="HitSound" ObjectPath="\Events\Default Work Unit\HitSound" GUID="{9F7ABB11-2C61-49CE-B81D-52F78CE6ABC0}" DurationType="OneShot" DurationMin="0.557279" DurationMax="0.557279">
+					<IncludedMemoryFiles>
+						<File Id="533110864" Language="SFX">
+							<ShortName>HitSound.wav</ShortName>
+							<Path>SFX\HitSound_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="155697680" Name="PlayPickupJingle" ObjectPath="\Events\Default Work Unit\PlayPickupJingle" GUID="{2619185D-4F56-4BD0-AA2F-1BF8589826A1}" DurationType="OneShot" DurationMin="0.371519" DurationMax="0.371519">
+					<IncludedMemoryFiles>
+						<File Id="207695274" Language="SFX">
+							<ShortName>PickupJingle.wav</ShortName>
+							<Path>SFX\PickupJingle_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
