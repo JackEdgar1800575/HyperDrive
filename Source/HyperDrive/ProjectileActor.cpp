@@ -36,7 +36,6 @@ AProjectileActor::AProjectileActor()
 	DamageAmount = 500;
 	ProjectileSpeed = 3000.0f;
 
-	//ProjectileSpecialComponent = CreateDefaultSubobject<UProjectileEffectComponent>(TEXT("ProjectileSpecial0"));
 
 }
 

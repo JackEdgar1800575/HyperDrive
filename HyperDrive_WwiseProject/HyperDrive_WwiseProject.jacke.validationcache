@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\States\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1667416471" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Queries\Factory Queries.wwu" DateLow="1633459919" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1633459919" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\HyperDrive_WwiseProject.wproj" DateLow="1667407204" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Events\Default Work Unit.wwu" DateLow="1667416449" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Effects\Factory Effects.wwu" DateLow="1633459919" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1633459919" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1667407599" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1667406290" DateHigh="0"/>
-	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667416312" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\States\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Queries\Factory Queries.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\HyperDrive_WwiseProject.wproj" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\HyperDrive_WwiseProject.jacke.wsettings" DateLow="1667492118" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Events\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Effects\Factory Effects.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
+	<ValidationCacheItem File="E:\Game Projects\Unreal Engine 4 Project\HyperDrive\HyperDrive_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1667418061" DateHigh="0"/>
 </ValidationCache>
