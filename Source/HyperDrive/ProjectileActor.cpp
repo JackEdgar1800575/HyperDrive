@@ -6,6 +6,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "RicochetEffect.h"
 #include "ProjectileEffectComponent.h"
+#include "GameFramework/Pawn.h"
 
 
 // Sets default values
@@ -78,6 +79,16 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
+	}
+
+	if (OtherActor)
+	{
+		APawn* Hit = Cast<APawn>(OtherActor);
+
+		if (Hit)
+		{
+			HitPawn = Hit;
+		}
 	}
 
 	if (ProjectileSpecialComponent != nullptr)

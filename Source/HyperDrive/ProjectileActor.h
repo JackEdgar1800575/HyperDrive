@@ -61,5 +61,7 @@ public:
 		int CurrentStrength;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Condition")
 		FVector Origin;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Projectile Condition")
+		class APawn* HitPawn;
 
 };
