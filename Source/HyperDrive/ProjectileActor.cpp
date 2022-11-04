@@ -106,6 +106,13 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 
 void AProjectileActor::OnProjectileDestroy()
 {
-	Destroy();
+	if (ProjectileSpecialComponent != nullptr)
+	{
+		ProjectileSpecialComponent->ActivateDestroyEffect();
+	}
+	else
+	{
+		Destroy();
+	}
 }
 

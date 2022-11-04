@@ -36,3 +36,16 @@ void UProjectileEffectComponent::ActivateHitEffect()
 {
 }
 
+void UProjectileEffectComponent::ActivateDestroyEffect()
+{
+	if (bHitActionOnDestroy)
+	{
+		ActivateHitEffect();
+	}
+
+	if (bAutoDestroy)
+	{
+		Projectile->Destroy();
+	}
+}
+

@@ -45,14 +45,14 @@ void AEnemyPawn::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimit
 	{
 		AProjectileActor* Proj = Cast<AProjectileActor>(OtherActor);
 
-		if (HitSound != nullptr)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
-		}
-
 		if (Proj)
 		{
 			DamageEnemy(Proj->DamageAmount);
+
+			if (HitSound != nullptr)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, HitSound, GetActorLocation());
+			}
 		}
 	}
 }

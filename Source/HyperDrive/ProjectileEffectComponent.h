@@ -27,6 +27,13 @@ public:
 
 	virtual void ActivateHitEffect();
 
+	virtual void ActivateDestroyEffect();
+	//Flag to specify whether the effect should be performed on destroy as well as hit
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		bool bHitActionOnDestroy = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		bool bAutoDestroy = true;
+
 	void SetProjectile(AProjectileActor* InProj) { Projectile = InProj; };
 		
 };

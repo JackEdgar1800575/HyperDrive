@@ -56,6 +56,7 @@ void AWeaponActor::Fire(FVector SpawnPosition, FRotator Rotation)
 				Launched->DamageAmount = DamageAmount;
 				Launched->ProjectileStrength = ProjectileStrength;
 				Launched->Range = WeaponRange;
+				Launched->Range = WeaponRange;
 
 				UGameplayStatics::FinishSpawningActor(Launched, SpawnTM);
 			}

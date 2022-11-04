@@ -31,3 +31,8 @@ void URicochetEffect::ActivateHitEffect()
 	}
 }
 
+void URicochetEffect::ActivateDestroyEffect()
+{
+	Super::ActivateDestroyEffect();
+}
+

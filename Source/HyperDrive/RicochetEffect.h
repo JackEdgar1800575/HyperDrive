@@ -21,6 +21,9 @@ private:
 public:
 
 	virtual void ActivateHitEffect() override;
+
+	virtual void ActivateDestroyEffect() override;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
 		int MaxRicos;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
