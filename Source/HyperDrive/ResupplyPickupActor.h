@@ -26,6 +26,9 @@ class HYPERDRIVE_API AResupplyPickupActor : public APickupActor
 
 public:
 	AResupplyPickupActor();
+
+	virtual void PickupResponse(AHyperDrivePawn* Player) override;
+
 	//The value that the pickup is worth
 	UPROPERTY(Category = "Pickup", BlueprintReadWrite, EditAnywhere)
 		int PickupValue;

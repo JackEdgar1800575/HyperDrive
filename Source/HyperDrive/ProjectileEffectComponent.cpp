@@ -36,6 +36,10 @@ void UProjectileEffectComponent::ActivateHitEffect()
 {
 }
 
+void UProjectileEffectComponent::ActivatePawnResponse()
+{
+}
+
 void UProjectileEffectComponent::ActivateDestroyEffect()
 {
 	if (bHitActionOnDestroy)

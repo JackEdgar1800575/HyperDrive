@@ -13,6 +13,7 @@
 #include "WeaponActor.h"
 #include "PickupActor.h"
 #include "ResupplyPickupActor.h"
+#include "WeaponPickupActor.h"
 
 const FName AHyperDrivePawn::MoveForwardBinding("MoveForward");
 const FName AHyperDrivePawn::MoveRightBinding("MoveRight");
@@ -45,6 +46,7 @@ AHyperDrivePawn::AHyperDrivePawn()
 	CurrentArmour = 0;
 	// Movement
 	MoveSpeed = 1000.0f;
+	CurrentWeaponIndex = 0;
 
 	//Input
 	bIsFiring = false;
@@ -55,6 +57,16 @@ void AHyperDrivePawn::BeginPlay()
 	Super::BeginPlay();
 
 	ShipMeshComponent->OnComponentBeginOverlap.AddDynamic(this, &AHyperDrivePawn::OnOverlapBegin);
+
+	if (WeaponInventory.Num() > 0)
+	{
+		if (WeaponInventory[0] != nullptr)
+		{
+			CurrentWeapon = WeaponInventory[0];
+		}
+	}
+	CurrentWeapon->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
+
 }
 
 void AHyperDrivePawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -67,6 +79,7 @@ void AHyperDrivePawn::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction("Fire_Primary", IE_Pressed, this, &AHyperDrivePawn::ActivateWeaponFiring);
 	PlayerInputComponent->BindAction("Fire_Primary", IE_Released, this, &AHyperDrivePawn::DeactivateWeaponFiring);
+	PlayerInputComponent->BindAction("Next_Weapon", IE_Pressed, this, &AHyperDrivePawn::NextWeapon);
 
 }
 
@@ -112,30 +125,7 @@ void AHyperDrivePawn::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, 
 
 		if (Pickup)
 		{
-			Pickup->PlayPickupSound();
-
-			AResupplyPickupActor* Resupply = Cast<AResupplyPickupActor>(Pickup);
-
-			if (Resupply)
-			{
-				if (Resupply->Type == EResupplyType::HEALTH)
-				{
-					if (!Resupply->bIsFull)
-						CurrentHealth += Resupply->PickupValue;
-					else
-						CurrentHealth = MaxHealth;
-					Resupply->Destroy();
-				}
-
-				if (Resupply->Type == EResupplyType::ARMOUR)
-				{
-					if (!Resupply->bIsFull)
-						CurrentArmour += Resupply->PickupValue;
-					else
-						CurrentArmour = MaxArmour;
-					Resupply->Destroy();
-				}
-			}
+			Pickup->PickupResponse(this);
 		}
 	}
 }
@@ -171,4 +161,14 @@ void AHyperDrivePawn::Fire()
 		const FVector SpawnLocation = GetActorLocation() + (GetActorForwardVector() * 100.0f);
 		CurrentWeapon->Fire(SpawnLocation, GetActorRotation());
 	}
+}
+
+void AHyperDrivePawn::NextWeapon()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, TEXT("Swapping Weapon!"));
+
+	CurrentWeaponIndex = (CurrentWeaponIndex + 1 < WeaponInventory.Num()) ? CurrentWeaponIndex + 1 : 0;
+
+	CurrentWeapon = WeaponInventory[CurrentWeaponIndex];
+
 }

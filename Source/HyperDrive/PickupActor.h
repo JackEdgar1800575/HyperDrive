@@ -3,6 +3,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "HyperDrivePawn.h"
 #include "PickupActor.generated.h"
 
 //Enum for identifying the type of pickup that
@@ -33,8 +34,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	virtual void PickupResponse(class AHyperDrivePawn& Player);
+	virtual void PickupResponse(AHyperDrivePawn* Player);
 
 	void PlayPickupSound();
 

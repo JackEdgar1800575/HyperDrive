@@ -25,15 +25,26 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	UFUNCTION(BlueprintCallable)
 	virtual void ActivateHitEffect();
 
+	UFUNCTION(BlueprintCallable)
+	virtual void ActivatePawnResponse();
+
+	UFUNCTION(BlueprintCallable)
 	virtual void ActivateDestroyEffect();
-	//Flag to specify whether the effect should be performed on destroy as well as hit
+
+	UFUNCTION(BlueprintCallable)
+	void SetProjectile(AProjectileActor* InProj) { Projectile = InProj; };
+
+	//Flag to specify whether the same effect should play on hit as well as destroy
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
 		bool bHitActionOnDestroy = false;
+	//Signals whether the projectile has a unique destroy effect or not. If false, projectile is simply destroyed
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
 		bool bAutoDestroy = true;
-
-	void SetProjectile(AProjectileActor* InProj) { Projectile = InProj; };
+	//Flag to determine whether hitting a pawn has a unique response compared to when hitting anything else
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		bool bUniquePawnResponse;
 		
 };

@@ -34,7 +34,7 @@ void APickupActor::Tick(float DeltaTime)
 
 }
 
-void APickupActor::PickupResponse(AHyperDrivePawn& Player)
+void APickupActor::PickupResponse(AHyperDrivePawn* Player)
 {
 }
 

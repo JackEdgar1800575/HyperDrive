@@ -64,6 +64,9 @@ public:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 		TArray<AWeaponActor*> WeaponInventory;
 
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	int CurrentWeaponIndex;
+
 	// Begin Actor Interface
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
@@ -78,6 +81,7 @@ public:
 	//Input
 	void ActivateWeaponFiring();
 	void DeactivateWeaponFiring();
+	void NextWeapon();
 
 	bool bIsFiring;
 
