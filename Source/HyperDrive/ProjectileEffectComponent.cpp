@@ -38,6 +38,10 @@ void UProjectileEffectComponent::ActivateHitEffect()
 
 void UProjectileEffectComponent::ActivatePawnResponse()
 {
+	if (!bUniquePawnResponse)
+	{
+		ActivateHitEffect();
+	}
 }
 
 void UProjectileEffectComponent::ActivateDestroyEffect()

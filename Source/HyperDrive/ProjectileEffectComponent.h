@@ -37,6 +37,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetProjectile(AProjectileActor* InProj) { Projectile = InProj; };
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
+		bool bIsSticky = false;
 	//Flag to specify whether the same effect should play on hit as well as destroy
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
 		bool bHitActionOnDestroy = false;
@@ -45,6 +47,7 @@ public:
 		bool bAutoDestroy = true;
 	//Flag to determine whether hitting a pawn has a unique response compared to when hitting anything else
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Properties")
-		bool bUniquePawnResponse;
+		bool bUniquePawnResponse = false;
+
 		
 };

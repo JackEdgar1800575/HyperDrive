@@ -12,10 +12,10 @@ USpawnableEffect::USpawnableEffect()
 
 void USpawnableEffect::ActivateHitEffect()
 {
-	if (SpawnObject != nullptr)
+	if (HitSpawnObject != nullptr)
 	{
 		//Spawn the specified actor where the projectile currently is
-		GetWorld()->SpawnActor<AActor>(SpawnObject, Projectile->GetActorLocation(), Projectile->GetActorRotation());
+		GetWorld()->SpawnActor<AActor>(HitSpawnObject, Projectile->GetActorLocation(), Projectile->GetActorRotation());
 	}
 	else
 	{
@@ -25,8 +25,31 @@ void USpawnableEffect::ActivateHitEffect()
 	Projectile->Destroy();
 }
 
+void USpawnableEffect::ActivatePawnResponse()
+{
+	Super::ActivatePawnResponse();
+
+	if (PawnHitSpawnObject != nullptr)
+	{
+		GetWorld()->SpawnActor<AActor>(PawnHitSpawnObject, Projectile->GetActorLocation(), Projectile->GetActorRotation());
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("What the fuck do you want me to spawn dipshit!?"));
+	}
+}
+
 void USpawnableEffect::ActivateDestroyEffect()
 {
 	Super::ActivateDestroyEffect();
+
+	if (DestroySpawnObject != nullptr)
+	{
+		GetWorld()->SpawnActor<AActor>(DestroySpawnObject, Projectile->GetActorLocation(), Projectile->GetActorRotation());
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, TEXT("What the fuck do you want me to spawn dipshit!?"));
+	}
 }
 
