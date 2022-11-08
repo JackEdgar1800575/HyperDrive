@@ -38,7 +38,7 @@ void UProjectileEffectComponent::ActivateHitEffect()
 
 void UProjectileEffectComponent::ActivatePawnResponse()
 {
-	if (!bUniquePawnResponse)
+	if (bUniquePawnResponse == false)
 	{
 		ActivateHitEffect();
 	}

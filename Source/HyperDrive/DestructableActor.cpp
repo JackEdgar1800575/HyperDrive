@@ -37,11 +37,6 @@ void ADestructableActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
 	{
 		AProjectileActor* Proj = Cast<AProjectileActor>(OtherActor);
 
-		if (DestroySound != nullptr)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, DestroySound, GetActorLocation());
-		}
-
 		if (Proj)
 		{
 			TakeDamage(Proj->DamageAmount);
@@ -69,6 +64,10 @@ void ADestructableActor::TakeDamage(int InDmg)
 void ADestructableActor::OnDestroy()
 {
 	////Play Audio of Object Destroying
+	if (DestroySound != nullptr)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, DestroySound, GetActorLocation());
+	}
 	Destroy();
 }
 

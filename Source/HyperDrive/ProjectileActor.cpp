@@ -80,9 +80,10 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
-
+	//Hit Response
 	if (OtherActor)
 	{
+		//Store referense to the pawn that the projectile has hit
 		APawn* Hit = Cast<APawn>(OtherActor);
 
 		if (Hit)
@@ -93,7 +94,14 @@ void AProjectileActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, U
 
 	if (ProjectileSpecialComponent != nullptr)
 	{
-		ProjectileSpecialComponent->ActivateHitEffect();
+		if (HitPawn != nullptr)
+		{
+			ProjectileSpecialComponent->ActivatePawnResponse();
+		}
+		else
+		{
+			ProjectileSpecialComponent->ActivateHitEffect();
+		}
 
 	}
 	else
