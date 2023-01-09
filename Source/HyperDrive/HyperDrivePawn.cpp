@@ -41,7 +41,7 @@ AHyperDrivePawn::AHyperDrivePawn()
 	CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
 
 	//Default Values
-	MaxHealth = MaxArmour = 1000;
+	MaxHealth = MaxArmour = 500;
 	CurrentHealth = MaxHealth;
 	CurrentArmour = 0;
 	// Movement
